@@ -2,7 +2,6 @@ import '@styles/globals.css';
 
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
-import Footer from '@components/Footer';
 
 
 export const metadata = {
@@ -22,7 +21,7 @@ const Rootlayout = ({children}) => {
            <main className='app'>
             <Nav/>
             <div className="pt-20">{children}</div>
-            <Footer/>
+
             </main>
             
         </Provider>
