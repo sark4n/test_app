@@ -7,8 +7,11 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
 
-  window.onscroll = function() {scrollFunction()};
-
+  if (typeof window !== "undefined") {
+    //This code is executed in the browser
+    window.onscroll = function() {scrollFunction()};
+ }
+  
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("navbar").classList.add('shadow-sm');
