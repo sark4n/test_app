@@ -2,11 +2,12 @@ import '@styles/globals.css';
 
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
+import Footer from '@components/Footer';
 
 
 export const metadata = {
-    title: "Promptopia",
-    description: 'Discover & Share AI Prompts'
+    title: "Asesorías RSO",
+    description: 'Has crecer tu negocio con nosotros.'
 }
 
 const Rootlayout = ({children}) => {
@@ -17,11 +18,13 @@ const Rootlayout = ({children}) => {
            <div className="main">
             <div className='gradient'/>
            </div>
-           
+        
            <main className='app'>
             <Nav/>
-            {children}
+            <div className="pt-20">{children}</div>
+            <Footer/>
             </main>
+            
         </Provider>
       </body>
     </html>

@@ -9,6 +9,20 @@ import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
 const Nav = () => {
 
+  window.onscroll = function() {scrollFunction()}
+
+  function scrollFunction() {
+      if(document.getElementById('navbar')){
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              document.getElementById('navbar').classList.add('shadow-sm');
+              document.getElementById('navbar').classList.add('bg-white');
+          }else{
+              document.getElementById('navbar').classList.remove('shadow-sm');
+              document.getElementById('navbar').classList.remove('bg-white');
+          }
+      }
+  }
+
     const { data: session } = useSession();
 
     const [providers, setProviders] = useState(null);
@@ -22,15 +36,16 @@ const Nav = () => {
       }, []);
 
     return (
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav id='navbar' className='w-full py-4 top-0 transition duration-300 ease-in-out z-40 fixed'>       
+    <div className="flex-between px-4 sm:px-6">
         <Link href="/" className="flex gap-2 flex-center">
             <Image
-                src="/assets/images/logo.svg"
-                width="30"
-                height="30"
+                src="/assets/images/logoRSO.svg"
+                width="80"
+                height="60"
                 className="object-contain"
             />
-            <p className="logo_text">Asesorias RSO</p>
+            <p className="logo_text">Asesorias</p>
         </Link>    
 
     {/* Desktop Navigation */}
@@ -38,10 +53,10 @@ const Nav = () => {
             {session?.user ? 
             (<div className="flex gap-3 md:gap-5">
                 <Link href="/create-prompt" className="black_btn">
-                    Create Post
+                    Crear Mensaje
                 </Link>
                 <button type='button' onClick={signOut} className='outline_btn'>
-                    Sign Out
+                    Salir
                 </button>
                 <Link href='/profile'>
                 <Image
@@ -63,7 +78,7 @@ const Nav = () => {
                   onClick={() => {signIn(provider.id);}}
                   className='black_btn'
                 >
-                  Sign in
+                  Iniciar Sesión
                 </button>
                ))}
             </>
@@ -90,14 +105,14 @@ const Nav = () => {
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  My Profile
+                  Mi Perfil
                 </Link>
                 <Link
                   href='/create-prompt'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Create Prompt
+                  Crear Mensaje
                 </Link>
                 <button
                   type='button'
@@ -107,7 +122,7 @@ const Nav = () => {
                   }}
                   className='mt-5 w-full black_btn'
                 >
-                  Sign Out
+                  Salir
                 </button>
               </div>
             )}
@@ -124,13 +139,14 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  Iniciar Sesión
                 </button>
               ))}
           </>
         )}
       </div>
 
+    </div>
     </nav>
   )
 }
