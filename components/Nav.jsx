@@ -6,6 +6,19 @@ import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").classList.add('shadow-sm');
+      document.getElementById('navbar').classList.add('bg-white');
+    } else {
+      document.getElementById('navbar').classList.remove('shadow-sm');
+      document.getElementById('navbar').classList.remove('bg-white');
+    }
+  }
+
   const { data: session } = useSession();
 
   const [providers, setProviders] = useState(null);
@@ -19,13 +32,14 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className='flex-between w-full mb-16 pt-3'>
+    <nav id='navbar' className='w-full py-4 top-0 transition duration-300 ease-in-out z-40 fixed'>       
+    <div className="flex-between px-4 sm:px-6">
       <Link href='/' className='flex gap-2 flex-center'>
         <Image
           src='/assets/images/logoRSO.svg'
           alt='logo'
-          width={30}
-          height={30}
+          width={80}
+          height={60}
           className='object-contain'
         />
         <p className='logo_text'>Asesorias</p>
@@ -126,12 +140,13 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  iniciar Sesion
                 </button>
               ))}
           </>
         )}
       </div>
+    </div>
     </nav>
   );
 };
