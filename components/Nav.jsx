@@ -22,13 +22,13 @@ const Nav = () => {
     <nav className='flex-between w-full mb-16 pt-3'>
       <Link href='/' className='flex gap-2 flex-center'>
         <Image
-          src='/assets/images/logo.svg'
+          src='/assets/images/logoRSO.svg'
           alt='logo'
           width={30}
           height={30}
           className='object-contain'
         />
-        <p className='logo_text'>Promptopia</p>
+        <p className='logo_text'>Asesorias</p>
       </Link>
 
       {/* Desktop Navigation */}
@@ -36,11 +36,11 @@ const Nav = () => {
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href='/create-prompt' className='black_btn'>
-              Create Post
+              Crear Mensaje
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
-              Sign Out
+              Salir
             </button>
 
             <Link href='/profile'>
@@ -65,7 +65,7 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  Iniciar Sesion
                 </button>
               ))}
           </>
@@ -92,14 +92,14 @@ const Nav = () => {
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  My Profile
+                  Mi Perfil
                 </Link>
                 <Link
                   href='/create-prompt'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Create Prompt
+                  Crear Mensaje
                 </Link>
                 <button
                   type='button'
@@ -109,7 +109,7 @@ const Nav = () => {
                   }}
                   className='mt-5 w-full black_btn'
                 >
-                  Sign Out
+                  Salir
                 </button>
               </div>
             )}
