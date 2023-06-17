@@ -23,7 +23,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
   const handleCopy = () => {
     setCopied(post.prompt);
     navigator.clipboard.writeText(post.prompt);
-    setTimeout(() => setCopied(false), 1500);
+    setTimeout(() => setCopied(false), 3000);
   };
 
   return (
@@ -70,7 +70,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
         className='font-inter text-sm blue_gradient cursor-pointer'
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
-        {post.tag}
+        #{post.tag}
       </p>
 
       {session?.user.id === post.creator._id && pathName === "/profile" && (
@@ -79,13 +79,13 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
             className='font-inter text-sm green_gradient cursor-pointer'
             onClick={handleEdit}
           >
-            Editar
+            Edit
           </p>
           <p
             className='font-inter text-sm orange_gradient cursor-pointer'
             onClick={handleDelete}
           >
-            Borrar
+            Delete
           </p>
         </div>
       )}
