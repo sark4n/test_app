@@ -44,6 +44,7 @@ const Nav = () => {
                 width="80"
                 height="60"
                 className="object-contain"
+                alt="logo"
             />
             <p className="logo_text">Asesorias</p>
         </Link>    
