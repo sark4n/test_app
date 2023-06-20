@@ -1,7 +1,8 @@
 import '@styles/globals.css';
 
-import Nav from '@components/Nav';
+import Nav from '@components/navigation/Nav';
 import Provider from '@components/Provider';
+import Footer from '@components/navigation/Footer';
 
 
 export const metadata = {
@@ -19,11 +20,11 @@ const Rootlayout = ({children}) => {
             <div className='gradient'/>
            </div>
         
-           <main className='app'>
+          <main className='app'>
             <Nav/>
             <div className="pt-20">{children}</div>
-
-            </main>
+            <Footer/>
+          </main>
             
         </Provider>
       </body>
