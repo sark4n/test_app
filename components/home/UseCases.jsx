@@ -12,6 +12,8 @@ const UseCases = () => {
       <h2 class="text-3xl font-bold sm:text-4xl">Propiedades Destacadas</h2>
 
       <p class="mt-4 text-gray-600">
+        En RSO Asesorias tambien contamos con servicios de corretaje de propiedades, si estas interesado
+        en publicar alguna propiedad, no dudes en contactarnos.<br/> 
         Hecha un vistaso a las ultimas propiedades destacadas en la pagina.
       </p>
     </div>

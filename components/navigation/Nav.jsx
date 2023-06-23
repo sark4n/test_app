@@ -201,14 +201,14 @@ const Nav = () => {
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Crear Mensaje
+                  Enviar mensaje
                 </Link>
                 <Link
                   href='/feed'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Ir al Feed
+                  Ver todos los mensajes
                 </Link>
                 <button
                   type='button'
@@ -216,7 +216,7 @@ const Nav = () => {
                     setToggleDropdown(false);
                     signOut();
                   }}
-                  className='mt-5 w-full black_btn'
+                  className='mt-5 w-full blue_btn'
                 >
                   Salir
                 </button>
