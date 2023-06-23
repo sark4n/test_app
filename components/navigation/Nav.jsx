@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
+//Que aparesca el navbar al hacer scroll
 
   if (typeof window !== "undefined") {
     //This code is executed in the browser
@@ -26,6 +27,7 @@ const Nav = () => {
 
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [openNavbar, setOpenNavbar] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -37,16 +39,99 @@ const Nav = () => {
   return (
     <nav id='navbar' className='w-full py-4 top-0 transition duration-300 ease-in-out z-40 fixed'>       
     <div className="flex-between px-4 sm:px-6">
-      <Link href='/' className='flex gap-2 flex-center'>
-        <Image
-          src='/assets/images/logoRSO.svg'
-          alt='logo'
-          width={80}
-          height={60}
-          className='object-contain'
-        />
-        <p className='logo_text'>Asesorias</p>
-      </Link>
+      <div className="flex-start gap-3">
+        {/* BURGER MENU */}
+        <div className='flex relative'>
+        <button
+        type='button'
+        onClick={() => setOpenNavbar(!openNavbar)}
+        className='navbar_btn'
+        > { openNavbar ? (
+          <Image src="/assets/icons/close.svg" width={30} height={30} alt="logo" />
+        ) : (
+          <Image
+            src='/assets/icons/menu2.svg'
+            alt='logo'
+            width={30}
+            height={30}
+            className='object-contain'
+          />
+        )}
+        </button>
+        {openNavbar && (
+              <div className='dropdown_navbar '>
+                  <Link
+                    href='/nuevapyme'
+                    className='dropdown_link'
+                    onClick={() => setOpenNavbar(false)}
+                  >
+                  <Image
+                    src='/assets/icons/newBusinessIco.svg'
+                    alt='logo'
+                    width={30}
+                    height={30}
+                    className='object-fill'
+                  />
+                    Creacion y Formalizacion de tu Empresa
+                  </Link>
+                
+                <Link
+                  href='/mkt'
+                  className='dropdown_link'
+                  onClick={() => setOpenNavbar(false)}
+                >
+                <Image
+                    src='/assets/icons/marketingIco.svg'
+                    alt='logo'
+                    width={30}
+                    height={30}
+                    className='object-fill'
+                  />
+                  Sitio Web y Marketing Digital
+                </Link>
+                <Link
+                  href='/contable-legal'
+                  className='dropdown_link'
+                  onClick={() => setOpenNavbar(false)}
+                >
+                  <Image
+                    src='/assets/icons/legalIco.svg'
+                    alt='logo'
+                    width={30}
+                    height={30}
+                    className='object-fill'
+                  />
+                  Asesoria Contable y Legal
+                </Link>
+                <Link
+                  href='/propiedades'
+                  className='dropdown_link'
+                  onClick={() => setOpenNavbar(false)}
+                >
+                  <Image
+                    src='/assets/icons/realstateIco.svg'
+                    alt='logo'
+                    width={30}
+                    height={30}
+                    className='object-fill'
+                  />
+                  Corredora de Propiedades
+                </Link>
+              </div>
+            )}
+        </div>
+        {/* LOGO */}
+        <Link href='/' className='flex gap-2 flex-center' onClick={() => setOpenNavbar(false)}>
+          <Image
+            src='/assets/images/logoRSO.svg'
+            alt='logo'
+            width={80}
+            height={60}
+            className='object-contain'
+          />
+          <p className='logo_text'>Asesorias</p>
+        </Link>
+      </div>
 
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
@@ -80,7 +165,7 @@ const Nav = () => {
                   onClick={() => {
                     signIn(provider.id);
                   }}
-                  className='black_btn'
+                  className='blue_btn'
                 >
                   Iniciar Sesion
                 </button>
@@ -118,6 +203,13 @@ const Nav = () => {
                 >
                   Crear Mensaje
                 </Link>
+                <Link
+                  href='/feed'
+                  className='dropdown_link'
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  Ir al Feed
+                </Link>
                 <button
                   type='button'
                   onClick={() => {
@@ -141,7 +233,7 @@ const Nav = () => {
                   onClick={() => {
                     signIn(provider.id);
                   }}
-                  className='black_btn'
+                  className='blue_btn'
                 >
                   iniciar Sesion
                 </button>

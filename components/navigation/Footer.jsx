@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
             </div>
             <p className="text-base text-gray-500">
-            Expertos en crecimiento empresarial para pymes y emprendedores. Te ayudamos a convertir tus sueños en realidad con soluciones a medida, profesionales experimentados y una amplia gama de herramientas. ¡Hagamos que suceda!
+            Expertos en crecimiento empresarial para pymes y emprendedores. Te ayudamos a convertir tus sueños en realidad con soluciones a medida, profesionales experimentados y una amplia gama de herramientas.
             </p>
           </div>
     </div>
