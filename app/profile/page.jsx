@@ -48,13 +48,16 @@ const MyProfile = () => {
   };
 
   return (
+    <>
     <Profile
       name='Mi'
-      desc='En el perfil se muestra tu información y tus mensajes.'
+      desc='Desde tu perfil puedes ver tus mensajes y enviar sugerencias para mejorar la experiencia en el sitio.'
       data={myPosts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
     />
+
+    </>
   );
 };
 

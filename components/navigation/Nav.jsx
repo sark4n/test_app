@@ -137,8 +137,14 @@ const Nav = () => {
       <div className='sm:flex hidden'>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
-            <Link href='/create-prompt' className='black_btn'>
-              Crear Mensaje
+            <Link href='/profile/misEmpresas' className='blue_btn'>
+              Mis Empresas
+            </Link>
+            <Link href='/profile/misSitios' className='blue_btn'>
+              Mis Sitios
+            </Link>
+            <Link href='/profile/misPropiedades' className='blue_btn'>
+              Mis Propiedades
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
@@ -197,18 +203,25 @@ const Nav = () => {
                   Mi Perfil
                 </Link>
                 <Link
-                  href='/create-prompt'
+                  href='/profile/misEmpresas'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Enviar mensaje
+                  Mis Empresas
                 </Link>
                 <Link
-                  href='/feed'
+                  href='/profile/misSitios'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Ver todos los mensajes
+                  Mis Sitios
+                </Link>
+                <Link
+                  href='/profile/misPropiedades'
+                  className='dropdown_link'
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  Mis Propiedades
                 </Link>
                 <button
                   type='button'
@@ -218,7 +231,7 @@ const Nav = () => {
                   }}
                   className='mt-5 w-full blue_btn'
                 >
-                  Salir
+                  Cerrar Sesión
                 </button>
               </div>
             )}

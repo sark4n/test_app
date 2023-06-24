@@ -1,8 +1,17 @@
-import React from 'react'
+
 
 const ContableLegal = () => {
   return (
-    <div>ContableLegal</div>
+    <>
+    <div> 
+      <h1 className='head_text text-left blue_gradient'>
+      Asesoria Contable y Legal
+      </h1>
+      <p className='desc text-left max-w-md'>
+        
+      </p>
+    </div>
+    </> 
   )
 }
 

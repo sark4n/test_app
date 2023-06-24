@@ -1,4 +1,6 @@
+import Link from "next/link";
 import PromptCard from "./PromptCard";
+
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
   return (
@@ -8,6 +10,22 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
       </h1>
       <p className='desc text-left'>{desc}</p>
 
+
+      {/* MENSAJES */}
+      <div className="pt-10 flex gap-6">
+        <Link
+          href='/create-prompt'
+          className='blue_btn'
+        >
+          Enviar nuevo mensaje
+        </Link>
+        <Link
+          href='/feed'
+          className='blue_btn'
+        >
+          Ver todas las sugerencias
+        </Link>
+      </div>
       <div className='mt-10 prompt_layout'>
         {data.map((post) => (
           <PromptCard
@@ -18,6 +36,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
           />
         ))}
       </div>
+
     </section>
   );
 };
