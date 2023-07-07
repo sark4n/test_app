@@ -5,7 +5,7 @@ const misPropiedades = () => {
   return (
     <div className='w-full'>
       <div className="block">    
-        <h1 className='head_text text-left blue_gradient'>
+        <h1 className='head_text text-left green_gradient'>
           Mis Propiedades
         </h1>
         <p className='desc text-left'>

@@ -49,7 +49,7 @@ const Footer = () => {
             <div className='flex gap-8'>
             <Link href='/' className='flex gap-2'>
                 <Image
-                src='/assets/images/logoRSO.svg'
+                src='/assets/images/RSOlogo.svg'
                 alt='logo'
                 width={80}
                 height={60}

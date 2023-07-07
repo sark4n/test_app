@@ -1,21 +1,34 @@
+import Image from "next/image"
+
 const NuevaPyme = () => {
   return (
     <>
+    {/* HEADER */}
     <div> 
-      <h1 className='head_text text-left blue_gradient'>
+      <h1 className='head_text text-left'>
         Creación y formalización de tu nueva empresa.
       </h1>
-      <p className='desc text-left max-w-md'>
+    </div>
+    {/* BODY */}
+    <div className="mt-4 flex-center flex-col sm:flex-row gap-4">
+      <p className='desc text-left max-w-md items-center justify-center'>
         Te ayudamos a crear y formalizar tu negocio. Te ayudamos a elegir cual es la mejor 
         forma de crear tu empresa ya sea un SPA, LTDA o lo que se adapte mejor a lo que haces. 
       </p>
+      <Image
+        src='/assets/images/guy_header4.jpg'
+        alt='guy_header'
+        width={450}
+        height={450}
+        className='object-contain mt-4'
+      />
     </div>
 
     {/* PREGUNTAS */}
-    <div className="pt-6 pb-6 space-y-4">
+    <div className="pt-6 pb-12 space-y-4">
       <details className="group [&_summary::-webkit-details-marker]:hidden">
         <summary
-          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-blue-950 p-4 text-gray-900"
+          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-black p-4 text-gray-900"
         >
           <h2 className="font-medium text-white">
             ¿ Que implica formalizar mi negocio ? 
@@ -47,7 +60,7 @@ const NuevaPyme = () => {
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
         <summary
-          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-blue-950 p-4 text-gray-900"
+          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-black p-4 text-gray-900"
         >
           <h2 className="font-medium text-white">
             ¿ En que me beneficia formalizar mi negocio ? 
@@ -78,10 +91,10 @@ const NuevaPyme = () => {
 
       <details className="group [&_summary::-webkit-details-marker]:hidden">
         <summary
-          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-blue-950 p-4 text-gray-900"
+          className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-black p-4 text-gray-900"
         >
           <h2 className="font-medium text-white">
-           ¿ Como empezamos entonces ? 
+           ¿ Como empiezo entonces ? 
           </h2>
           <svg
             class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"

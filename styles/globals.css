@@ -78,14 +78,18 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-md border border-none bg-black py-1.5 px-5 text-white transition-all hover:bg-green-600 text-center text-sm font-inter flex items-center justify-center;
 }
 .blue_btn {
-  @apply rounded-full border border-black bg-blue-950 py-1.5 px-5 text-white transition-all hover:bg-orange-600 text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-md border border-none bg-blue-950 py-1.5 px-5 text-white transition-all hover:bg-orange-600 text-center text-sm font-inter flex items-center justify-center;
+}
+
+.menu_btn {
+  @apply bg-transparent border-none rounded-md py-1.5 px-5 text-black font-extrabold hover:bg-gray-200
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-blue-950 hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-md border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-red-600 hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
@@ -101,7 +105,7 @@
 }
 
 .blue_gradient {
-  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-900 to-blue-950 bg-clip-text text-transparent;
 }
 
 .desc {
@@ -154,14 +158,14 @@
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium hover:bg-gray-100 w-full p-2 flex gap-6;
+  @apply hover:scale-110 text-sm text-gray-700 hover:text-gray-500 font-semibold hover:bg-green-50 hover:rounded-md w-full p-4 flex gap-6;
 }
 
 .dropdown_navbar {
-  @apply absolute left-0 top-full mt-3 w-full rounded-lg bg-white h-auto min-w-[380px] flex flex-col gap-2 justify-start items-start ;
+  @apply transition-all duration-300 ease-in-out absolute left-0 top-full mt-3 w-full rounded-md bg-white h-auto min-w-[380px] flex flex-col gap-2 justify-start items-start p-2;
 }
 .navbar_btn {
-  @apply rounded-full border-none bg-transparent py-1 px-2 transition-all hover:bg-gray-300 flex items-center justify-center;
+  @apply rounded-full border-none bg-transparent py-2.5 px-2 transition-all hover:bg-gray-300 flex items-center justify-center;
 }
 
 
@@ -185,3 +189,4 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
