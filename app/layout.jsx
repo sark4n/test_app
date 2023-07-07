@@ -13,7 +13,9 @@ export const metadata = {
 const Rootlayout = ({children}) => {
   return (
     <html lang="en">
-      <head><meta name="google-site-verification" content="zM8iaW-xEdAjgcw1s-T7t4e0IfmuA9ZHnQc4crSYqAU" /></head>
+      <head><meta name="google-site-verification" content="zM8iaW-xEdAjgcw1s-T7t4e0IfmuA9ZHnQc4crSYqAU" />
+      <link data-n-head="ssr" data-hid="favicon" id="favicon" rel="shortcut icon" href="https://i.ibb.co/2djbVDX/rso-website-favicon-color.png" sizes="16x16 32x32 48x48 64x64 96x96" type="image/png">
+      </link></head>
       <body>
         <Provider>
            <div className="main">

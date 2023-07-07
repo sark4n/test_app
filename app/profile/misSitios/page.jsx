@@ -4,7 +4,7 @@ const miSitios = () => {
   return (
     <section className='w-full'>
       <div className="block">    
-        <h1 className='head_text text-left blue_gradient'>
+        <h1 className='head_text text-left green_gradient'>
           Mis Sitios
         </h1>
         <p className='desc text-left'>
@@ -14,7 +14,7 @@ const miSitios = () => {
     <div className="py-10">
       <Link
         href='/'
-        className='blue_btn'
+        className='black_btn'
       >
         Crear nuevo sitio      
       </Link>

@@ -11,7 +11,7 @@ const Home = () => {
       <MainHeader/>
       {/* <Feed/> */}
       <Features/>
-      <UseCases/>
+      {/* <UseCases/> */}
       <CTA/>
     </section>
       )
