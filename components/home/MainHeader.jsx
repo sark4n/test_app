@@ -9,13 +9,13 @@ const MainHeader = () => {
             Asesoría<br/>
         <span className="green_gradient text-center">
         <Typewriter
-            words={[' para PyMes', ' Emprendedores', 'Contable & Legal' ]}
+            words={[' para PyMes', ' Contable', ' Legal', 'Inmobiliaria' ]}
             loop={0}
             cursor
             cursorStyle='_'
             typeSpeed={100}
             deleteSpeed={50}
-            delaySpeed={2000}
+            delaySpeed={4000}
             // onLoopDone={handleDone}
             // onType={handleType}
         /></span>

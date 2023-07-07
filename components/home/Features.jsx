@@ -24,7 +24,7 @@ const Features = () => {
 
             {/* {Container} */}
             <div className="mt-16 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-2 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
-                <Link href="/nuevapyme" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-blue-100">
+                <Link href="/nuevapyme" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-green-50">
                     <div className="relative p-8 space-y-8 scale-90 transition duration-300 group-hover:scale-100">
                         <img src="https://i.ibb.co/tZq7Gsw/icono-Tienda2.png" className="w-10" width="512" height="512" alt="icono tienda"/>
                         <div className="space-y-2">
@@ -35,7 +35,7 @@ const Features = () => {
                     </div>
                 </Link>
 
-                <Link href="/mkt" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-blue-100">
+                <Link href="/mkt" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-green-50">
                     <div className="relative p-8 space-y-8 scale-90 transition duration-300 group-hover:scale-100 ">
                         <img src="https://i.ibb.co/HVp6zx2/icono-Redes2.png" className="w-10" width="512" height="512" alt="icono redes"/>
                         <div className="space-y-2">
@@ -47,7 +47,7 @@ const Features = () => {
                     </div>
                 </Link>                
 
-                <Link href="/contale-legal" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-blue-100">
+                <Link href="/contale-legal" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-green-50">
                     <div className="relative p-8 space-y-8 scale-90 transition duration-300 group-hover:scale-100 ">
                         <img src="https://i.ibb.co/hmKxsyF/contabilidad.png" className="w-10" width="512" height="512" alt="icono legal y contable"/>
                         <div className="space-y-2">
@@ -60,7 +60,7 @@ const Features = () => {
                     </div>
                 </Link>
                
-                <Link href="/propiedades" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-blue-100">
+                <Link href="/propiedades" className="relative group bg-transparent transition hover:z-[1] hover:shadow-2xl hover:bg-green-50">
                     <div className="relative p-8 space-y-8 scale-90 transition duration-300 group-hover:scale-100 ">
                         <img src="https://i.ibb.co/gz5dgCZ/icono-Corredor.png" className="w-10" width="512" height="512" alt="icono corredor"/>
                         <div className="space-y-2">
