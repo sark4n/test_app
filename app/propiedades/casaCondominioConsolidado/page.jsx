@@ -1,235 +1,164 @@
-const Propiedad2 = () => {
-    return (
-  <section>
-    <div class="relative mx-auto max-w-screen-xl px-4 py-8">
-      <div>
-        <h1 class="text-2xl font-bold lg:text-3xl">Simple Clothes Basic Tee</h1>
-  
-        <p class="mt-1 text-sm text-gray-500">SKU: #012345</p>
-      </div>
-  
-      <div class="grid gap-8 lg:grid-cols-4 lg:items-start">
-        <div class="lg:col-span-3">
-          <div class="relative mt-4">
-            <img
-              alt="Tee"
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              class="h-72 w-full rounded-xl object-cover lg:h-[540px]"
-            />
-  
-            <div
-              class="absolute bottom-4 left-1/2 inline-flex -translate-x-1/2 items-center rounded-full bg-black/75 px-3 py-1.5 text-white"
-            >
-              <svg
-                class="h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
-                />
-              </svg>
-  
-              <span class="ms-1.5 text-xs"> Hover to zoom </span>
-            </div>
-          </div>
-  
-          <ul class="mt-1 flex gap-1">
-            <li>
-              <img
-                alt="Tee"
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                class="h-16 w-16 rounded-md object-cover"
-              />
-            </li>
-  
-            <li>
-              <img
-                alt="Tee"
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                class="h-16 w-16 rounded-md object-cover"
-              />
-            </li>
-  
-            <li>
-              <img
-                alt="Tee"
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                class="h-16 w-16 rounded-md object-cover"
-              />
-            </li>
-  
-            <li>
-              <img
-                alt="Tee"
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                class="h-16 w-16 rounded-md object-cover"
-              />
-            </li>
-          </ul>
-        </div>
-  
-        <div class="lg:sticky lg:top-0">
-          <form class="space-y-4 lg:pt-8">
-            <fieldset>
-              <legend class="text-lg font-bold">Color</legend>
-  
-              <div class="mt-2 flex flex-wrap gap-1">
-                <label for="color_green" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="color_green"
-                    name="color"
-                    class="peer sr-only"
-                    checked
-                  />
-  
-                  <span
-                    class="block h-6 w-6 rounded-full border border-gray-200 bg-green-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"
-                  ></span>
-                </label>
-  
-                <label for="color_blue" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="color_blue"
-                    name="color"
-                    class="peer sr-only"
-                  />
-  
-                  <span
-                    class="block h-6 w-6 rounded-full border border-gray-200 bg-blue-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"
-                  ></span>
-                </label>
-  
-                <label for="color_pink" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="color_pink"
-                    name="color"
-                    class="peer sr-only"
-                  />
-  
-                  <span
-                    class="block h-6 w-6 rounded-full border border-gray-200 bg-pink-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"
-                  ></span>
-                </label>
-  
-                <label for="color_red" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="color_red"
-                    name="color"
-                    class="peer sr-only"
-                  />
-  
-                  <span
-                    class="block h-6 w-6 rounded-full border border-gray-200 bg-red-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"
-                  ></span>
-                </label>
-  
-                <label for="color_indigo" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="color_indigo"
-                    name="color"
-                    class="peer sr-only"
-                  />
-  
-                  <span
-                    class="block h-6 w-6 rounded-full border border-gray-200 bg-indigo-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"
-                  ></span>
-                </label>
-              </div>
-            </fieldset>
-  
-            <fieldset>
-              <legend class="text-lg font-bold">Material</legend>
-  
-              <div class="mt-2 flex flex-wrap gap-1">
-                <label for="material_cotton" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="material_cotton"
-                    name="material"
-                    class="peer sr-only"
-                    checked
-                  />
-  
-                  <span
-                    class="block rounded-full border border-gray-200 px-3 py-1 text-xs peer-checked:bg-gray-100"
-                  >
-                    Cotton
-                  </span>
-                </label>
-  
-                <label for="material_wool" class="cursor-pointer">
-                  <input
-                    type="radio"
-                    id="material_wool"
-                    name="material"
-                    class="peer sr-only"
-                    checked
-                  />
-  
-                  <span
-                    class="block rounded-full border border-gray-200 px-3 py-1 text-xs peer-checked:bg-gray-100"
-                  >
-                    Wool
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-  
-            <div class="rounded border bg-gray-100 p-4">
-              <p class="text-sm">
-                <span class="block"> Pay as low as $3/mo with 0% APR. </span>
-  
-                <a href="" class="mt-1 inline-block underline"> Find out more </a>
-              </p>
-            </div>
-  
-            <div>
-              <p class="text-xl font-bold">$19.99</p>
-            </div>
-  
-            <button
-              type="submit"
-              class="w-full rounded bg-red-700 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
-            >
-              Add to cart
-            </button>
-  
-            <button
-              type="button"
-              class="w-full rounded border border-gray-300 bg-gray-100 px-6 py-3 text-sm font-bold uppercase tracking-wide"
-            >
-              Notify when on sale
-            </button>
-          </form>
-        </div>
-  
-        <div class="lg:col-span-3">
-          <div class="prose max-w-none">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam
-              eos iusto repellat blanditiis voluptate aspernatur, quae nemo
-              exercitationem cum debitis! Sint consectetur laborum tempora
-              repellat odit. Impedit quasi reprehenderit harum illum sequi
-              provident soluta cum quisquam odit possimus? Officia illum saepe
-              magnam nostrum, officiis placeat iure itaque cumque voluptate?
-            </p>
-          </div>
-        </div>
-      </div>
+import Slider from "../components/slider"
+
+const Propiedad1 = () => {
+  const slides = [
+    { url: "https://i.ibb.co/TMhrkHK/fe85faca-54f0-4668-8bfe-232b81f39eac.jpg", title: "1" },
+    { url: "https://i.ibb.co/qN79KkG/4cc1c0a6-d659-4614-a093-6e4f1d3a0cab.jpg", title: "2" },
+    { url: "https://i.ibb.co/VVPxQXr/4d52d963-f7ed-496a-a93e-4a5da4dc8c06.jpg", title: "3" },
+    { url: "https://i.ibb.co/3NqKxm8/8ea2d18e-9695-434a-82be-24bc2c2a6a6a.jpg", title: "4" },
+    { url: "https://i.ibb.co/5vT49y5/32acf695-c97f-437c-8cee-ebfb22968977.jpg", title: "5" },
+    { url: "https://i.ibb.co/TY47WC8/96c4828d-d558-48b6-a1e5-05de0293b6b8.jpg", title: "6" },
+    { url: "https://i.ibb.co/NCmFGgJ/262d2491-0c30-48f3-b44b-20688b853184.jpg", title: "7" },
+    { url: "https://i.ibb.co/5YHVNrT/466d8c6f-83a9-42df-9b96-e6166ede144e.jpg", title: "8" },
+    { url: "https://i.ibb.co/7QtpbrL/1370e9cf-2e5f-4c57-a9f7-393219196caa.jpg", title: "9" },
+    { url: "https://i.ibb.co/qCX8fGJ/97352e69-9aad-42e0-8fb7-c579f5896acb.jpg", title: "10" },
+    { url: "https://i.ibb.co/nRChCDf/12705346-2309-43d8-9e09-a90954ad774c.jpg", title: "11" },
+    { url: "https://i.ibb.co/dP1Tt2g/c7387b4f-5504-4c5d-9e3d-825ecaf72404.jpg", title: "12" },
+    { url: "https://i.ibb.co/1sYW24p/f0400d4d-6a33-44c6-9d13-e7dd4692cd3c.jpg", title: "13" },
+    { url: "https://i.ibb.co/8YHtv60/fc33f177-6d2d-4ff6-8842-42d9f9e2c6d3.jpg", title: "14" },
+    { url: "https://i.ibb.co/HTyP59T/01c4e987-251c-4a04-950c-0bc375928bb3.jpg", title: "15" },
+    
+  ];
+  const containerStyles = {
+    width: "400px",
+    height: "280px",
+    margin: "0",
+  };
+
+
+
+  return (
+<section className="w-screen sm:p-24 sm:pt-0 sm:pb-8 p-8 pt-0">
+  {/* HEADER */}
+  <div>
+    <h1 className="font-extrabold font text-xl">
+        Casa en Condominio Consolidado
+    </h1>
+  </div>
+  {/* SLIDER */}
+  <div className="sm:flex pt-2 gap-8">
+    <div className="h-96 sm:w-4/5">
+    <Slider slides={slides}/>
     </div>
-  </section>
-    )
-  }
-  
-  export default Propiedad2
+    {/* CARACTERISTICAS */}
+    <div className="bg-green-50 p-2 border-2 border-green-100 sm:mt-2 mt-12">  
+      <h1 className="text-lg font-bold">Características</h1>
+      <div className="mt-6 grid gap-4 grid-cols-3 grid-rows-3">
+      {/* ITEM1 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                  <img
+                    alt="mt2"
+                    src="\assets\icons\mt2.svg"
+                    class="h-5 w-5"
+                  />
+                    <p class="font-medium text-green-600">240</p>
+                  </div>
+                  <div>            
+                  <p class="text-gray-500">mts2 Construidos</p>
+                  </div>
+        </div>
+      {/* ITEM 2 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                  <img
+                    alt="mt2"
+                    src="\assets\icons\toilet2.svg"
+                    class="h-5 w-5"
+                  />
+                    <p class="font-medium text-green-600">2</p>
+                  </div>
+                  <div>            
+                  <p class="text-gray-500">Baños</p>
+                  </div>
+        </div>
+      {/* ITEM 3 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                    <img
+                      alt="mt2"
+                      src="\assets\icons\bed2.svg"
+                      class="h-5 w-5"
+                    />
+                    <p class="font-medium text-green-600">4</p>
+                  </div>
+                  <div>            
+                  <p class="text-gray-500">Dormitorios</p>
+                  </div>
+        </div>
+      {/* ITEM 4 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                    <img
+                      alt="mt2"
+                      src="\assets\icons\bed2.svg"
+                      class="h-5 w-5"
+                    />
+                    <p class="font-medium text-green-600">Logia</p>
+                  </div>
+        </div>
+      {/* ITEM 5 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                    <img
+                      alt="mt2"
+                      src="\assets\icons\bed2.svg"
+                      class="h-5 w-5"
+                    />
+                    <p class="font-medium text-green-600">Piscina</p>
+                  </div>
+        </div>
+      {/* ITEM 6 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                    <img
+                      alt="mt2"
+                      src="\assets\icons\bed2.svg"
+                      class="h-5 w-5"
+                    />
+                    <p class="font-medium text-green-600">Quincho & Terraza</p>
+                  </div>
+        </div>
+      {/* ITEM 7 */}
+        <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+                  <div class="mt-1.5 sm:mt-0 flex gap-1">
+                    <img
+                      alt="mt2"
+                      src="\assets\icons\bed2.svg"
+                      class="h-5 w-5"
+                    />
+                    <p class="font-medium text-green-600">Bodega</p>
+                  </div>
+        </div>                                                 
+      </div>
+      {/* PRECIO Y CTA */}
+      <div className="flex-center gap-2 py-8">
+        <button
+          type="submit"
+          className="rounded bg-black px-6 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-green-600"
+        >
+          Me interesa
+        </button>
+        <div>
+          <p className="font-semibold">Valor Arriendo</p>
+          <p className="text-xl font-bold">$1.200.000 /m</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+ 
+  {/* TEXTO */}
+  <div className="sm:pt-8 pt-4">
+    <p>
+    Gasto comun $10.000. Arriendo casa en condominio consolidado, son 240 mts2 con terraza.
+    El valor del arriendo incluye la manutecion del jardin y piscina.
+    Cuenta con excelente conectividad a 45 minutos de Santiago y a 35 de melipilla.
+    A 5 minutos de la municipalidad, banco, supermercado, registro civil, y centro de salud primaria,
+    carabineros. Cuenta con agua y pozo.
+    </p>
+  </div>
+</section>
+  )
+}
+
+export default Propiedad1

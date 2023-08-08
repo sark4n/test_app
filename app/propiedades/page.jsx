@@ -1,4 +1,5 @@
 import LastestPropis from "@components/home/lastestPropis"
+import Slider from "./components/slider"
 
 
 const Propiedades = () => {
