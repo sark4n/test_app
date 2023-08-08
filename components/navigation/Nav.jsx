@@ -189,7 +189,7 @@ const Nav = () => {
               height={40}
               className='object-contain'
             />
-            <p className='font-inter font-extrabold text-lg text-black tracking-wide'>Asesorias</p>
+            <p className='sm:flex hidden font-inter font-extrabold text-lg text-black tracking-wide'>Asesorias</p>
           </Link>
         </div>
         {/* BOTON DE CONTACTO */}
