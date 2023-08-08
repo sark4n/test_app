@@ -194,10 +194,10 @@ const Nav = () => {
         </div>
         {/* BOTON DE CONTACTO */}
         <div
-          className="mr-2">
+          className="sm:mr-4 mr-2 ">
         <Link
             href='https://wa.me/+56922491856?text=Hola,%20quisiera%20consultar%20por%20servicios.'
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-black px-5 py-2 text-base font-medium text-white hover:bg-green-600"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-black sm:px-5 px-2 py-2 first-line:text-base font-medium text-white hover:bg-green-600"
           >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
