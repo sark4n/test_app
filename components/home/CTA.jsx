@@ -11,7 +11,7 @@ const CTA = () => {
       <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div className="sm:ml-6 inline-flex rounded-md shadow">
           <Link
-            href='/contacto'
+            href='https://wa.me/+56922491856?text=Hola,%20quisiera%20consultar%20por%20servicios.'
             className="inline-flex items-center justify-center rounded-md border border-transparent bg-black px-5 py-3 text-base font-medium text-white hover:bg-green-600"
           >
             Hagamos que suceda!
@@ -19,7 +19,7 @@ const CTA = () => {
         </div>
         <div className="ml-3 inline-flex rounded-md shadow">
           <Link
-            href="/contacto"
+            href="https://www.instagram.com/asesoriasrso"
             className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-green-600 hover:bg-green-50"
           >
             Quiero saber más

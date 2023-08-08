@@ -9,7 +9,8 @@ const Propiedades = () => {
       Listado de Propiedades publicadas
       </h1>
       <p className='desc text-left max-w-md'>
-      ¿Estas interesado en que tu propiedad aparezca listada aquí? Inicia sesión y sigue los pasos desde tu perfil.
+      ¿Estas interesado en que tu propiedad aparezca listada aquí? Ve al botón de contáctanos y cuéntanos por WhatsApp
+      que estas buscando publicar. Seguimos desde ahí.
       </p>
     </div>
     <LastestPropis/>

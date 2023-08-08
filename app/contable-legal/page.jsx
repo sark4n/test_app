@@ -13,7 +13,7 @@ const ContableLegal = () => {
     </div>
     <div className="mt-4 flex-center flex-col sm:flex-row gap-4">
       <p className='desc text-left max-w-md items-center justify-center'>
-      En rso asesorías, nos encargamos de brindarte el apoyo necesario para formalizar tu 
+      En RSO asesorías, nos encargamos de brindarte el apoyo necesario para formalizar tu 
       empresa y resolver cualquier asunto legal, de manera rápida y eficiente. 
       </p>
       <Image

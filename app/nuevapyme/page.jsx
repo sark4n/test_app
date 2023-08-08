@@ -113,8 +113,7 @@ const NuevaPyme = () => {
         </summary>
 
         <p className="mt-4 px-4 leading-relaxed text-gray-700">
-        Ve a "Iniciar Sesion" y entra con tu cuenta, desde tu perfil ve a la seccion "Mis empresas" 
-        y luego a crear nueva empresa. Sigue los pasos desde ahi.
+        Ve al botón de contáctanos y cuéntanos por WhatsApp que estas buscando. Seguimos desde ahí.
         </p>
       </details>
     </div>

@@ -6,10 +6,10 @@ const MainHeader = () => {
   return (
     <>
         <h1 className="head_text text-center">
-            Asesoría<br/>
+             Creamos tu <br/>
         <span className="green_gradient text-center">
         <Typewriter
-            words={[' para PyMes', ' Contable', ' Legal', 'Inmobiliaria' ]}
+            words={[' nueva PyMe', ' nuevo sitio Web', ]}
             loop={0}
             cursor
             cursorStyle='_'
@@ -24,7 +24,7 @@ const MainHeader = () => {
             Has crecer tu negocio con las herramientas que tenemos para ofrecerte.
         </p>
         <Link
-            href='/contacto'
+            href='https://www.instagram.com/asesoriasrso'
             className="mt-12 inline-flex items-center justify-center rounded-md border border-transparent bg-black px-5 py-3 text-base font-medium text-white hover:bg-green-600"
           >
             Comienza Hoy
